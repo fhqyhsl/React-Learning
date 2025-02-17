@@ -56,7 +56,6 @@
     <script type="text/babel">
       // 颜色列表
       const colors = [
-        "black",
         "red",
         "orange",
         "yellow",
@@ -65,16 +64,14 @@
         "indigo",
         "purple",
       ];
+
       // 初始状态
       let clickCount = 0;
-      let currentColorIndex = 0;
+      let currentColorIndex = -1; // 初始为 -1，表示第一次显示黑色
 
       // 点击按钮的逻辑
       const handleClick = () => {
         clickCount++;
-        if (clickCount % 8 == 0 && clickCount > 2) {
-          currentColorIndex++;
-        }
         currentColorIndex = (currentColorIndex + 1) % colors.length; // 循环颜色
         rootRender();
       };
@@ -82,7 +79,8 @@
       // 渲染函数
       const rootRender = () => {
         const message = `你已经点击了 ${clickCount} 次`;
-        const textColor = colors[currentColorIndex]; // 当前颜色
+        const textColor =
+          currentColorIndex === -1 ? "black" : colors[currentColorIndex]; // 第一次为黑色，之后循环颜色
 
         // 隐藏成就提示
         const achievement =

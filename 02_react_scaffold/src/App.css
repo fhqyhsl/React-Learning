@@ -1,0 +1,84 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.insbutton {
+  height: 25px;
+  margin-left: 10px;
+  background-color: #61dafbaa;
+}
+.firstfloor {
+  margin-bottom: 50px;
+}
+.picture {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  float: left;
+}
+.username {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  margin-left: 40px;
+  padding-left: 40px;
+}
+.comments {
+  color: black;
+
+  margin-left: 500px;
+  padding-left: 30px;
+  font-size: 20px;
+  height: 200px;
+  width: 400px;
+  border: 1px solid #f4f4f4;
+  border-radius: 10px;
+}
+.like {
+  margin-left: 60%;
+}
+.othercomments {
+  margin-left: 650px;
+  height: 40px;
+  width: 80px;
+  background-color: #12d0ff;
+  border-radius: 10px;
+  border-style: hidden;
+}
