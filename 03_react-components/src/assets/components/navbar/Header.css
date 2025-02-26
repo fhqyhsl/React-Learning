@@ -1,0 +1,39 @@
+.custom-header {
+  background: #001529;
+  padding: 0 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.custom-menu.ant-menu {
+  background: transparent;
+  border-bottom: none;
+  line-height: 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.custom-menu .ant-menu-item {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 16px;
+  padding: 0 25px;
+  transition: all 0.3s;
+}
+
+.custom-menu .ant-menu-item:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.custom-menu .ant-menu-item-selected {
+  color: #fff;
+  background: #1890ff;
+}
+
+.custom-menu .ant-menu-submenu-title {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.menu-icon {
+  font-size: 18px;
+  margin-right: 8px;
+}
